@@ -57,5 +57,7 @@ def sum_array_with_inject(integer_array)
 end
 
 def add_s(string_array)
-  string_array.each_with_index {|string, i| string << "s"} unless i == 1
+  string_array.each_with_index do |string, index|
+    string << "s" unless index == 1
+  end
 end
